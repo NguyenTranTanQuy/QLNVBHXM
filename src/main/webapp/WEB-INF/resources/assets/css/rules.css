@@ -1,0 +1,69 @@
+.rules-container {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.rules-content {
+  border: 2px solid #ccc;
+  height: 100%;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+
+.rules-heading {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+#rules-list {
+  display: inline-block;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.rules-item {
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rules-item:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+#add-rule-btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  align-self: center;
+  min-width: 200px;
+  border: 1px solid;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#add-rule-btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: #fefefe;
+}

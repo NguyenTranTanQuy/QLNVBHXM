@@ -1,0 +1,112 @@
+:root { 
+	--primary-color: #de4949; 
+	--primary-hover-color: #6c2323; 
+	--color-active: #2edc30; 
+	--color-inactive: #de4949; 
+	--height-header: 60px; 
+	--width-sidebar: 325px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	position: relative;
+}
+
+main {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: calc(100% - var(--width-sidebar));
+	height: calc(100% - var(--height-header));
+	background-color: #fff;
+}
+
+.width-full {
+	width: 100% !important;
+}
+
+.flex-center {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.bi {
+	font-size: 32px;
+}
+
+.icon-caret {
+	transition: all 0.2s ease-in-out;
+	font-size: 1.6rem;
+}
+
+.collapsed {
+	display: none !important;
+}
+
+.btn-close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 8px;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text--error {
+	color: var(--primary-color);
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.text--success {
+	font-weight: 500;
+    margin-left: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--color-active);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+	background-color: #f5f5f5;
+	position: fixed;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #aaa;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #ddd;
+}

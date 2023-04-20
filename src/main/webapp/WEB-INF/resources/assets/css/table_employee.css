@@ -1,0 +1,28 @@
+.table-edit-btn {
+  display: inline-block;
+  width: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.table-data > .table-status {
+  width: 100px;
+  min-height: 40px;
+  margin: auto;
+}
+
+.table-edit-btn:hover .table-edit-search {
+  opacity: 0.6;
+}
+
+.table-data > span[name="true"] {
+  color: #fff;
+  background-color: var(--color-active);
+}
+
+.table-data > span[name="false"] {
+  color: #fff;
+  background-color: var(--color-inactive);
+}

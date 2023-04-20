@@ -1,0 +1,149 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--height-header);
+  background-color: #f2f7ff;
+  z-index: 1;
+  padding: 0 16px;
+  border: 1px solid #000;
+}
+
+.header__menu-show-sidebar {
+  position: absolute;
+  left: var(--width-sidebar);
+  top: 60%;
+  padding: 8px 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header__noti {
+  position: relative;
+  cursor: pointer;
+}
+
+.header__noti-details {
+  position: absolute;
+  width: 400px;
+  top: 140%;
+  right: 0;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: default;
+  display: none;
+}
+
+.header__noti-title {
+  padding: 16px;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+}
+
+.header__noti-list {
+  list-style: none;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.header__noti-item {
+  padding: 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 80px;
+  max-height: 80px;
+  line-height: 1.6;
+  border-radius: 5px;
+  white-space: wrap;
+  overflow-x: hidden;
+}
+
+.header__noti-item:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.header__name-account {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header__name-office {
+	display:inline-block;
+	text-align: center;
+	width: 100%;
+	font-weight: 500;
+	color: var(--primary-color);
+}
+
+.header__avatar-info {
+  position: relative;
+}
+
+.header__avatar {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.header__avatar-show_details {
+  display: none;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  right: 0;
+  top: 130%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__list-details {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header__item-detail {
+  border-radius: 5px;
+}
+
+.header__item-detail:hover {
+  background-color: #333;
+}
+
+.header__item-detail:hover .header__detail-link,
+.header__item-detail:hover .header__detail-link-logout {
+  color: #fff;
+}
+
+.header__detail-link,
+.header__detail-link-logout {
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}

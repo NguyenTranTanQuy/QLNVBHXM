@@ -1,0 +1,11 @@
+.table-btn-notification {
+  width: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.table-btn-notification:hover {
+  opacity: 0.6;
+}

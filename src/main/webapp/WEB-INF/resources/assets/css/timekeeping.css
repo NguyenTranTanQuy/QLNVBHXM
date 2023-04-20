@@ -1,0 +1,105 @@
+.timekeeping__container {
+  padding: 20px;
+  height: 100%;
+}
+.timekeeping__heading {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.timekeeping__content {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.timekeeping__checkin,
+.timekeeping__checkout {
+  flex: 1;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+.timekeeping__checkin--title,
+.timekeeping__checkout--title {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.timekeeping__checkin,
+.timekeeping__checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.timekeeping__checkin--group,
+.timekeeping__checkout--group {
+  padding: 12px;
+}
+
+.timekeeping__checkout--group {
+  text-align: right;
+}
+
+.timekeeping__checkin--title {
+  align-self: flex-end;
+}
+
+.timekeeping__checkout--title {
+  align-self: flex-start;
+}
+
+.timekeeping__checkin--time,
+.timekeeping__checkin-status,
+.timekeeping__checkout--time,
+.timekeeping__checkout-status {
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  min-width: 250px;
+  font-size: 1.5rem;
+}
+
+.timekeeping__checkin--timer,
+.timekeeping__checkout--timer {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.timekeeping__checkin--status-name,
+.timekeeping__checkout--status-name {
+  font-weight: 500;
+}
+
+.timekeeping__checkout--timer,
+.timekeeping__checkout--status-name {
+  min-width: 400px;
+  display: inline-block;
+}
+
+.timekeeping__button {
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid;
+  font-size: 1rem;
+  border-radius: 999px;
+  min-width: 300px;
+  align-self: flex-end;
+  background-color: var(--primary-color);
+}
+
+.timekeeping__button:disabled {
+	opacity: 0.6;
+	cursor: default;
+}
+
+.timekeeping__button:not(:disabled):hover {
+  background-color: var(--primary-hover-color);
+}
