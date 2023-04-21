@@ -6,7 +6,5 @@
 <%@	taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
-<<<<<<< Upstream, based on branch 'master' of https://github.com/NguyenTranTanQuy/QLNVBHXM.git
-=======
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
->>>>>>> 05d448f tesst
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
