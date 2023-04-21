@@ -5,3 +5,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@	taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<<<<<<< Upstream, based on branch 'master' of https://github.com/NguyenTranTanQuy/QLNVBHXM.git
+=======
+<%@	taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+>>>>>>> 27cca44 tessss
